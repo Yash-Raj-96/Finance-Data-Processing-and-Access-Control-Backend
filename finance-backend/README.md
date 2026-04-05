@@ -226,41 +226,23 @@ Authorization: Bearer <token>
 
 ## 💰 API Endpoints
 
-### 🔹 Auth
+🔹 Auth
+POST /api/auth/login → Login user  
+POST /api/auth/register → Register user  
 
-```
-POST /api/auth/login
-POST /api/auth/register
-```
+🔹 Users
+GET /api/users → Get users (Admin only)  
 
----
+🔹 Transactions
+GET /api/transactions → Get all transactions  
+POST /api/transactions → Create transaction  
+PUT /api/transactions/:id → Update transaction  
+DELETE /api/transactions/:id → Delete transaction  
 
-### 🔹 Users (Admin Only)
-
-```
-GET /api/users
-```
-
----
-
-### 🔹 Transactions
-
-```
-GET    /api/transactions
-POST   /api/transactions
-PUT    /api/transactions/:id
-DELETE /api/transactions/:id
-```
-
----
-
-### 🔹 Dashboard
-
-```
-GET /api/dashboard/summary
-GET /api/dashboard/trends
-GET /api/dashboard/category-analytics
-```
+🔹 Dashboard
+GET /api/dashboard/summary → Get income, expense, and balance  
+GET /api/dashboard/trends → Get monthly trends  
+GET /api/dashboard/category-analytics → Get category-wise analytics
 
 ---
 
@@ -272,17 +254,6 @@ GET /api/dashboard/category-analytics
 * Monthly Trends
 * Category-wise Analysis
 * Recent Transactions
-
----
-
-## 🔍 Filtering & Pagination
-
-```http
-GET /api/transactions?page=1&limit=10
-GET /api/transactions?type=income
-GET /api/transactions?category=Food
-GET /api/transactions?startDate=2026-01-01&endDate=2026-12-31
-```
 
 ---
 
@@ -302,19 +273,13 @@ GET /api/transactions?startDate=2026-01-01&endDate=2026-12-31
 
 ✔ Easy and fast development
 ❌ Slight performance overhead compared to raw SQL
-
 ### 2. Monolithic Architecture
-
 ✔ Simple and easy to manage
 ❌ Less scalable than microservices
-
 ### 3. JWT Authentication
-
 ✔ Stateless and scalable
 ❌ No built-in token revocation
-
 ### 4. Soft Delete
-
 ✔ Prevents accidental data loss
 ❌ Requires additional filtering logic
 
