@@ -25,7 +25,7 @@ It focuses on:
 
 ---
 
-## 🧠 Architecture
+## 🏗️ Project Structure
 
 ```
 
