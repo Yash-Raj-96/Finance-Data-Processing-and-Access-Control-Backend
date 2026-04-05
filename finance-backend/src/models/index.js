@@ -1,5 +1,7 @@
 // src/models/index.js
-const sequelize = require('../config/database');
+//const sequelize = require('../config/database');
+const { sequelize } = require('../config/database');
+
 const User = require('./User');
 const Transaction = require('./Transaction');
 

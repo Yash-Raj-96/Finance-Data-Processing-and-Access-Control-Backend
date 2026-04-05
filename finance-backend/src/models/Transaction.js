@@ -1,6 +1,8 @@
 // src/models/Transaction.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+//const sequelize = require('../config/database');
+const { sequelize } = require('../config/database');
+
 
 const Transaction = sequelize.define('Transaction', {
   id: {
