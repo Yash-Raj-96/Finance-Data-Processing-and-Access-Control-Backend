@@ -330,12 +330,6 @@ GET /api/transactions?startDate=2026-01-01&endDate=2026-12-31
 
 ## 🌐 Deployment
 
-* **Live URL:**
-
-```
-https://finance-data-processing-and-access-q79u.onrender.com
-```
-
 * **Testing Tools:**
 
   * Insomnia
