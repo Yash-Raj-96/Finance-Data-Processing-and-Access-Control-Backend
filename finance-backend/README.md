@@ -93,7 +93,7 @@ finance-backend/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repo-url>
+git https://github.com/Yash-Raj-96/Finance-Data-Processing-and-Access-Control-Backend.git
 cd finance-backend
 ````
 
