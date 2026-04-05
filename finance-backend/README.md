@@ -76,8 +76,32 @@ finance-backend/
 ├── package-lock.json
 └── README.md
 
-
 ````
+## 🔄 System Flow
+
+Client → Routes → Middleware → Controller → Service → Model → Database
+
+### 📌 Explanation of Flow
+
+- **Routes**  
+  Define API endpoints and forward requests to controllers.
+
+- **Middleware**  
+  Handles authentication, authorization, and validation before reaching controllers.
+
+- **Controllers**  
+  Receive requests, process input, and call service layer functions.
+
+- **Services**  
+  Contain business logic and handle data processing.
+
+- **Models**  
+  Interact with the database using ORM (Sequelize).
+
+- **Database**  
+  Stores all application data securely and persistently.
+
+---
 
 ### 🔹 Design Principles
 
@@ -339,6 +363,19 @@ GET /api/transactions?startDate=2026-01-01&endDate=2026-12-31
 
 ---
 
+## 🚀 Future Improvements
+
+- 🔐 Add refresh tokens for better authentication handling  
+- 🔒 Implement two-factor authentication (2FA) for enhanced security  
+- ⚡ Add caching using Redis to improve performance  
+- 📝 Integrate logging system using Winston or similar tools  
+- 📚 Add API documentation using Swagger / OpenAPI  
+- 🧪 Implement unit and integration testing  
+- 🚀 Set up CI/CD pipeline for automated deployment  
+- 📊 Add advanced analytics and reporting features  
+- 🌐 Improve scalability with microservices architecture (future scope)
+
+---
 ## 📌 Conclusion
 
 This project demonstrates:
