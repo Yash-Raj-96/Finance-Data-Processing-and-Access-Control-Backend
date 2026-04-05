@@ -1,6 +1,4 @@
----
 
-```md
 # 📘 Finance Data Processing and Access Control Backend
 
 ## 📌 Overview
